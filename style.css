@@ -1,0 +1,778 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    font-family: Playfair Display;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+html {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For IE and Edge */
+  }
+  
+  body {
+    overflow: -moz-scrollbars-none; /* Older Firefox */
+    overflow: scroll;
+    overflow-x: hidden; /* Enable scrolling without a scrollbar */
+  }
+  
+  /* For Webkit browsers like Chrome, Safari, and Edge */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+button {
+    cursor: pointer;
+    text-transform: capitalize;
+    font: 400;
+}
+
+/* ----- header ----- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    position: fixed;
+    z-index: 5;
+    width: 100vw;
+    align-items: center;
+    padding: 1rem 3.5rem;
+    color: antiquewhite;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 66.5%);
+}
+
+.logo {
+    width: 80px;
+    border-radius: 50%;
+    /* background-color: green; */
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.contact {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.head_tag,
+ul,
+.sidebar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar {
+    font-size: .7rem;
+    gap: 4rem;
+}
+
+.socail {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.socail button {
+    background-color: transparent;
+    border: 1px solid #937F78;
+    padding: .7rem 1rem;
+}
+
+a {
+    font-family: Playfair Display;
+    color: #fff;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+/* .img_container {
+     height: 99.4vh; 
+    width: 100vw;
+    position: absolute;
+    top: 35%;
+    z-index: -1;
+    left:0% ;
+    position: relative; 
+    background-color: black;
+}
+
+.img_container img {
+     height: 100%; 
+    width: 100%;
+} */
+
+.bx-menu {
+    display: none;
+}
+
+
+/*------------------ section class->section,section_content -------------------------------*/
+
+.section {
+    height: 100vh;
+    width: 100vw;
+    background: url('./img/video_HR 1.jpg') center/cover no-repeat;
+    position: relative;
+    background-attachment: fixed !important;
+}
+
+.section_content {
+    position: absolute;
+    bottom: 0%;
+    padding-left: 2.2rem;
+}
+
+.section_content p:first-child {
+    font-family: Playfair Display;
+    font-size: 63px;
+    font-weight: 600;
+    line-height: 61px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.section_content .image_sec {
+    animation: arrow 1s linear infinite;
+    font-size: 3rem;
+    cursor: pointer;
+    padding-bottom: 25px;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(25%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/*------------ section class->sec_cont,cotton_bro,Symphony,Met_care,Meticulous ------------------------*/
+.sec_cont {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    background: url('./img/pexels-cottonbro-studio-5095274 1.jpg') center/cover no-repeat;
+    flex-direction: row;
+    background-attachment: fixed !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.cotton_bro {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    background-color: #fff;
+}
+
+.cotton_bro img {
+    height: 100%;
+    width: 100%;
+}
+
+.Symphony {
+    width: 837px;
+    display: inline-flex;
+    gap: 25px;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: flex-start;
+}
+
+.Symphony h4 {
+    font-family: Playfair Display;
+    font-size: 70px;
+    font-weight: 900;
+    letter-spacing: 0.01em;
+}
+
+.Met_care {
+    /* width: 10; */
+    height: 341px;
+}
+
+.Symphony .Meticulous {
+    font-family: Playfair Display;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+
+.Symphony .Meticulous span {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 51px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.Symphony button {
+
+    padding: 10px 34px 10px 34px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid #937F78
+}
+
+/*-- section class-> hero-section, overlay,content, left, right,subheading,services,line,discover-btn --*/
+
+.section_hero {
+    width: 100vw;
+    background-attachment: fixed !important;
+    height: 100vh;
+    background: url('./img/hyper-realistic-image-of-a-leather-shoe-being-restored\ 1.png') center/cover no-repeat;
+}
+
+.section_container_hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10%;
+}
+#service-list_hero {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 3.5rem; 
+}
+
+#service-list_hero li {
+    cursor: pointer;
+    position: relative;
+    font-size: 2.5rem;
+    font-family: 'serif'; /* Match the font style */
+}
+
+#service-list_hero li::after {
+    content: ''; /* Creates the pseudo-element */
+    position: absolute;
+    height: 3px;
+    width: 0; /* Start with no width */
+    background-color: rgb(253, 252, 252);
+    /* bottom: 0; */
+    left: 0;
+    top: 1.5rem;
+    z-index: 2;
+    border-radius: 25px;
+    transition: all .5s ease; /* Smooth transition for line expansion */
+}
+
+#service-list_hero li.active::after {
+    width: 60px; /* Expand the line to full width of the element */
+}
+
+#service-list_hero li span {
+    color: #fff;
+    width: max-content;
+    position: absolute;
+    left: 0;
+    transition:all .5s ease;
+}
+
+#service-list_hero li.active span {
+    color: rgb(252, 251, 251); /* Highlight the active element */
+    /* font-weight: bold; */
+    position: absolute;
+    transition:all .5s ease;
+    left: 4rem;
+    font-style: italic;
+}
+
+
+
+/* ul li.active:hover{
+    left: 8%;
+} */
+
+.section_content_hero {
+    text-align: center;
+    width: 50%;
+}
+
+.section_content_hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.section_content_hero p {
+    margin-bottom: 1.5rem;
+}
+
+.section_content_hero button {
+    padding: 10px 34px 10px 34px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid #937F78;
+    transition: 0.5s;
+}
+
+.section_content_hero button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/* section->leather-repair-section,background-overlay,repair-content ,issue-details, repair-message,issue-title,issue-list,repair-message  */
+.leather-repair-section {
+    position: relative;
+    height: 100vh;
+    background: url('./img/devn-V7T7_A0FIIY-unsplash\ 1.png') center/cover no-repeat;
+    background-attachment: fixed !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_container_cuts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0%;
+    width: 100vw;
+}
+
+#service-list_cuts {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 3.5rem; 
+}
+
+#service-list_cuts li {
+    cursor: pointer;
+    position: relative;
+    font-size: 2.5rem;
+    font-family: 'serif'; /* Match the font style */
+}
+
+#service-list_cuts li::after {
+    content: ''; /* Creates the pseudo-element */
+    position: absolute;
+    height: 3px;
+    width: 0; /* Start with no width */
+    background-color: rgb(253, 252, 252);
+    /* bottom: 0; */
+    left: 0;
+    top: 1.5rem;
+    z-index: 2;
+    border-radius: 25px;
+    transition: all .5s ease; /* Smooth transition for line expansion */
+}
+
+#service-list_cuts li.active_cuts::after {
+    width: 60px; /* Expand the line to full width of the element */
+}
+
+#service-list_cuts li span {
+    color: #fff;
+    width: max-content;
+    position: absolute;
+    left: 0;
+    transition:all .5s ease;
+}
+
+#service-list_cuts li.active_cuts span {
+    color: rgb(252, 251, 251); /* Highlight the active element */
+    /* font-weight: bold; */
+    position: absolute;
+    transition:all .5s ease;
+    left: 4rem;
+    font-style: italic;
+}
+
+
+
+/* ul li.active:hover{
+    left: 8%;
+} */
+
+.section_content_cuts {
+    text-align: center;
+    width: 50%;
+}
+
+.section_content_cuts h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.section_content_cuts p {
+    margin-bottom: 1.5rem;
+}
+
+.section_content_cuts button {
+    padding: 10px 34px 10px 34px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid #937F78;
+    transition: 0.5s;
+}
+
+.section_content_cuts button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+/* ------------------------ slider --------------------------------- */
+.slider_bar {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* -------- section-> brand_section,brand_name --------- */
+.brand_section {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+.brand_section h1 {
+    margin-bottom: 20px;
+}
+
+.brand_slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand_slider .slick-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    /* Set a fixed height for the slider */
+}
+
+.brand_slider img {
+    max-width: 100px;
+    max-height: 100%;
+    height: auto;
+    object-fit: contain;
+    /* Ensure the images fit inside the container without distortion */
+}
+
+/* .slick-track {
+    display: flex;
+    align-items: center;
+} */
+
+/*---------------------------- silder_truly ----------------------------------------------*/
+
+.Session_truly{
+    width: 100vw;
+    height: 100vh;
+    background: url('./img/pexels-cottonbro.jpg') center/cover no-repeat;
+    background-attachment: fixed !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-slider {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;
+    color: white;
+    text-align: center;
+  }
+  
+ 
+  
+  .slider-content {
+    position: relative;
+    z-index: 2;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+  }
+  
+  .slider-content h2{
+    font-family: Playfair Display;
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;    
+  }
+  .testimonial {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .testimonial.active {
+    display: block;
+    opacity: 1;
+    width: 25%;
+  }
+  
+  .slider-content p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+
+  }
+  
+  .slider-content span {
+    font-size: 1rem;
+    font-style: italic;
+  }
+  
+  .dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 3;
+  }
+  
+  .dots .dots_stand {
+    width: 10px;
+    height: 10px;
+    background: #937F78;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, border 0.3s;
+  }
+  
+  .dots img.active {
+   background-color: #B88371;
+    transform: scale(1.1);
+  }
+
+  /*---------------- vist_section ---------------------------*/
+  .vist_section{
+    width: 100vw;
+    height: 100vh;
+    background: url('./img/pexels-photo-6195834\ 1.png') center/cover no-repeat;
+    background-attachment: fixed !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .visit_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .visit_content h2{
+    font-size: 52px;
+    font-weight: 700;
+  }
+
+  .visit_content p{
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  .visit_content button{
+    background-color: transparent;
+    border: 1px solid #937F78;
+    padding: .7rem 1rem;
+    
+  }
+
+  /*-------------------------- footer -----------------------------------*/
+  .footer{
+    width: 100vw;
+    height: 256px;
+    background-color: #171717;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 60px;
+
+  }
+  .need_help h3 , .sub_footer h3{
+    color: #c3c1c1;
+    font-size: 25px;
+  }
+  .need_help , .sub_footer{
+    display: flex;
+    width: 50vw;
+    padding-left: 30px;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .need_help p , .sub_footer p{
+    font-weight: 100;
+    font-size: 15px;
+    color: #575656;
+    text-transform: uppercase;
+  }
+
+  .footer_para{
+    padding-top: 10px;
+  }
+  .sub_footer,.footer_para{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .sub_footer p{
+    width: 50%;
+  }
+  .inp_send{
+    display: flex;
+  }
+
+  .inp_send input{
+    padding: .4rem 1.5rem .4rem .5rem ;
+    background: transparent;
+    outline: none;
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .inp_send i{
+    background-color: #fff;
+    padding: .4rem .5rem;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 100 !important;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+/* --------- button hover effect --------- */
+
+.socail button:hover ,.Symphony button:hover , .visit_content button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+.discover-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ---- responsive ---- */
+@media (max-width:1036px) {
+
+    header {
+        padding: .5rem 2.7rem;
+    }
+
+    .head_tag ul a {
+        font-size: 12px;
+    }
+
+    /* .logo {
+        width: 100px;
+    } */
+
+    .sidebar {
+        gap: 1rem;
+    }
+
+    .socail {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 810px) {
+
+    .head_tag ul,
+    .sidebar {
+        display: none;
+    }
+
+    .bx-menu {
+        display: block;
+        font-size: 2rem;
+    }
+
+    .section_content p:first-child {
+        width: 62%;
+        font-size: 40px;
+        line-height: 43px;
+    }
+
+    .Symphony h4 {
+        font-size: 50px;
+    }
+
+    .Symphony .Meticulous {
+        font-size: 28px;
+    }
+
+    .Symphony .Meticulous span {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .content {
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+}
