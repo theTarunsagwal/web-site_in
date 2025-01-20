@@ -702,6 +702,17 @@ swiper-slide img {
     border-bottom-right-radius: 5px;
   }
 
+  .inp_send:hover input{
+    border-color: #2b2a2a;
+    box-shadow: 1px 0px 1px #2b2a2a ;
+  }
+
+  .inp_send:hover i{
+    background-color: #2b2a2a;
+    color: #575656;
+    box-shadow: 1px 0px 1px #2b2a2a ;
+  }
+
 /* --------- button hover effect --------- */
 
 .socail button:hover ,.Symphony button:hover , .visit_content button:hover {
